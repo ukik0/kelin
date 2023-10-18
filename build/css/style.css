@@ -1,0 +1,215 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: "Proxima Nova", sans-serif;
+  font-size: 0.5208335vw;
+  font-style: normal;
+  font-weight: normal;
+  -webkit-animation: bugfix infinite 1s;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-style: normal;
+  font-weight: normal;
+  -webkit-animation: bugfix infinite 1s;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  color: #1e2328;
+  background-color: #fff;
+  scrollbar-gutter: stable;
+  scroll-behavior: smooth;
+  overflow-anchor: none;
+}
+
+input,
+textarea {
+  -webkit-animation: bugfix infinite 1s;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  color: inherit;
+}
+
+a {
+  color: unset;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+button,
+input,
+a,
+textarea {
+  outline: none;
+  cursor: pointer;
+  font: inherit;
+}
+
+button:focus,
+input:focus,
+a:focus,
+textarea:focus {
+  outline: none;
+}
+
+button:active,
+input:active,
+a:active,
+textarea:active {
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+button {
+  border: none;
+  color: inherit;
+  font: inherit;
+  text-align: inherit;
+  padding: 0;
+  background-color: transparent;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.container {
+  width: 125rem;
+  margin: 0 auto;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.container {
+  width: 168.4rem;
+  margin: 0 auto;
+}
+
+body.locked {
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/Proxima-Regular/ProximaNovaRegular.eot");
+  src: url("../fonts/Proxima-Regular/ProximaNovaRegular.eot") format("embedded-opentype"), url("../fonts/Proxima-Regular/ProximaNovaRegular.woff2") format("woff2"), url("../fonts/Proxima-Regular/ProximaNovaRegular.woff") format("woff"), url("../fonts/Proxima-Regular/ProximaNovaRegular.ttf") format("truetype"), url("../fonts/Proxima-Regular/ProximaNovaRegular.svg#ProximaNovaRegular") format("svg");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/Proxima-SemiBold/ProximaNovaSemibold.eot");
+  src: url("../fonts/Proxima-SemiBold/ProximaNovaSemibold.eot") format("embedded-opentype"), url("../fonts/Proxima-SemiBold/ProximaNovaSemibold.woff2") format("woff2"), url("../fonts/Proxima-SemiBold/ProximaNovaSemibold.woff") format("woff"), url("../fonts/Proxima-SemiBold/ProximaNovaSemibold.ttf") format("truetype"), url("../fonts/Proxima-SemiBold/ProximaNovaSemibold.svg#ProximaNovaSemibold") format("svg");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/Proxima-Bold/ProximaNovaBold.eot");
+  src: url("../fonts/Proxima-Bold/ProximaNovaBold.eot") format("embedded-opentype"), url("../fonts/Proxima-Bold/ProximaNovaBold.woff2") format("woff2"), url("../fonts/Proxima-Bold/ProximaNovaBold.woff") format("woff"), url("../fonts/Proxima-Bold/ProximaNovaBold.ttf") format("truetype"), url("../fonts/Proxima-Bold/ProximaNovaBold.svg#ProximaNovaBold") format("svg");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "URW Geometric Extended";
+  src: url("../fonts/URW-Bold/URWGeometricExtBold.eot");
+  src: url("../fonts/URW-Bold/URWGeometricExtBold.eot") format("embedded-opentype"), url("../fonts/URW-Bold/URWGeometricExtBold.woff2") format("woff2"), url("../fonts/URW-Bold/URWGeometricExtBold.woff") format("woff"), url("../fonts/URW-Bold/URWGeometricExtBold.ttf") format("truetype"), url("../fonts/URW-Bold/URWGeometricExtBold.svg#URWGeometricExtBold") format("svg");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "URW Geometric Extended";
+  src: url("../fonts/URW-Heavy/URWGeometricExtHeavy.eot");
+  src: url("../fonts/URW-Heavy/URWGeometricExtHeavy.eot") format("embedded-opentype"), url("../fonts/URW-Heavy/URWGeometricExtHeavy.woff2") format("woff2"), url("../fonts/URW-Heavy/URWGeometricExtHeavy.woff") format("woff"), url("../fonts/URW-Heavy/URWGeometricExtHeavy.ttf") format("truetype"), url("../fonts/URW-Heavy/URWGeometricExtHeavy.svg#URWGeometricExtHeavy") format("svg");
+  font-style: normal;
+  font-display: swap;
+  font-weight: 900;
+}
+
+@media (min-width: 48.01em) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media (max-width: 48em) {
+  html {
+    font-size: 1.3333333333vw;
+    -webkit-text-size-adjust: none;
+  }
+
+  body {
+    -webkit-text-size-adjust: none;
+  }
+
+  .container {
+    padding: 0 2rem;
+    width: 100%;
+  }
+
+  .desktop {
+    display: none;
+  }
+}
