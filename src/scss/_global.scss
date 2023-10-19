@@ -1,3 +1,5 @@
+@import 'vars';
+
 body {
     &.locked {
         overflow: hidden;
@@ -18,4 +20,26 @@ body {
 
 .hidden {
     display: none;
+}
+
+
+@keyframes animated-logo-path-1 {
+    0%{
+        fill: $white;
+    }
+
+    100% {
+        fill: $blue;
+    }
+}
+
+@keyframes animated-logo-path-2 {
+    0%{
+        fill: $blue;
+    }
+
+
+    100% {
+        fill: $white;
+    }
 }

@@ -1,0 +1,89 @@
+@import 'vars';
+@import 'mixins';
+
+.section-title {
+    color: $text-primary;
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 6rem;
+    font-family: $font-family-URW;
+
+    span {
+        color: $blue;
+    }
+}
+
+.button {
+    @include button();
+}
+
+.button-outlined {
+    @include button-outlined();
+}
+
+.button-white {
+    @include button(3rem, 3.3rem, $white);
+}
+
+.background-blur {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 14.39%, rgba(255, 255, 255, 0) 182.55%);
+    backdrop-filter: blur(5rem);
+}
+
+.background-blur-bordered {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 14.39%, rgba(255, 255, 255, 0) 182.55%);
+    border: 0.1rem solid $white;
+    backdrop-filter: blur(5rem);
+}
+
+.arrow-link {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: 0.3s opacity ease-out;
+
+    img {
+        width: 4.6rem;
+        height: 2rem;
+        transition: 0.3s transform ease-out;
+    }
+
+    span {
+        color: $blue;
+        font-size: 1.8rem;
+        font-weight: 600;
+        letter-spacing: 0.18rem;
+        text-transform: uppercase;
+    }
+
+    &:hover {
+        img {
+            transform: translateX(.5rem);
+        }
+
+        opacity: 0.85;
+    }
+}
+
+.link-blue {
+    transition: 0.3s color ease-out;
+
+    &:hover {
+        color: $blue;
+    }
+}
+
+.image-scale {
+    overflow: hidden;
+
+    &:hover {
+        img {
+            transform: scale(1.15);
+        }
+    }
+
+    img {
+        transition: 0.3s transform ease-out;
+    }
+}

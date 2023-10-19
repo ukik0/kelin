@@ -3,10 +3,13 @@
 
 //Sections or Pages SCSS-files imports
 @import './header';
+@import './breadcrumbs';
+@import './insights';
 // @import './footer';
 
 // Global SCSS-files imports
 @import './vars';
 @import './reset';
-@import './global';
 @import './fonts';
+@import './global';
+@import './components';

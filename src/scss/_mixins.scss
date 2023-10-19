@@ -1,0 +1,54 @@
+@import 'vars';
+
+@mixin pseudo() {
+    content: '';
+    position: absolute;
+    @content;
+}
+
+@mixin small-tablet {
+    @media (max-width: 48em) {
+        @content;
+    }
+}
+
+@mixin button($padding-x: 3rem, $padding-y: 3.3rem, $background: $blue) {
+    color: $white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 0.16rem;
+    text-transform: uppercase;
+    border-radius: 5rem;
+    background: $background;
+    padding: $padding-y $padding-x;
+
+    @include small-tablet {
+        font-size: 3.2rem;
+        font-weight: 600;
+        letter-spacing: 0.32rem;
+        padding: 4.6rem 4.8rem;
+        border-radius: 10rem;
+    }
+
+    @content;
+}
+
+@mixin button-outlined($padding-x: 6rem, $padding-y: 3.5rem, $background: $blue) {
+    color: $blue;
+    font-family: $font-family-URW;
+    font-size: 2.2rem;
+    font-weight: 400;
+    letter-spacing: 0.044rem;
+    text-transform: uppercase;
+    background: transparent;
+    border-radius: 50rem;
+    padding: $padding-y $padding-x;
+    border: 0.1rem solid $white;
+    transition: 0.3s background ease-out;
+
+    &:hover {
+        background: $white;
+    }
+
+    @content;
+}

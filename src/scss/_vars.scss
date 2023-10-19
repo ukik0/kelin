@@ -8,8 +8,6 @@ $icons: #b0becd;
 $grey: #c1cfe4;
 
 $bg-primary: #cde3f5;
-$bg-gradient: linear-gradient(0deg, $bg-primary 0%, $bg-primary 100%),
-    linear-gradient(0deg, #e9f1f8 0%, #e9f1f8 100%), $white;
 
 //z-indexes
 $z-index-modals: 1001;
@@ -21,5 +19,6 @@ $z-index-catalog-filter-menu: 996;
 $z-index-mobile-bar-menu: 995;
 $z-index-other: 2;
 
-//other
+//additional
 $font-family: 'Proxima Nova', sans-serif;
+$font-family-URW: 'URW Geometric Extended', sans-serif;
