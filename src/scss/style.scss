@@ -1,3 +1,10 @@
+// Global SCSS-files imports
+@import './vars';
+@import './reset';
+@import './fonts';
+@import './global';
+@import './components';
+
 // Libs
 // @import './libs/swiper';
 
@@ -5,11 +12,7 @@
 @import './header';
 @import './breadcrumbs';
 @import './insights';
+@import './insights-form';
 // @import './footer';
 
-// Global SCSS-files imports
-@import './vars';
-@import './reset';
-@import './fonts';
-@import './global';
-@import './components';
+

@@ -29,12 +29,14 @@
 .background-blur {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 14.39%, rgba(255, 255, 255, 0) 182.55%);
     backdrop-filter: blur(5rem);
+    border-radius: 4rem;
 }
 
 .background-blur-bordered {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 14.39%, rgba(255, 255, 255, 0) 182.55%);
     border: 0.1rem solid $white;
     backdrop-filter: blur(5rem);
+    border-radius: 4rem;
 }
 
 .arrow-link {
@@ -59,7 +61,7 @@
 
     &:hover {
         img {
-            transform: translateX(.5rem);
+            transform: translateX(0.5rem);
         }
 
         opacity: 0.85;
@@ -85,5 +87,21 @@
 
     img {
         transition: 0.3s transform ease-out;
+    }
+}
+
+.input-field {
+    border-radius: 10rem;
+    border: 0.1rem solid $white;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 14.39%, rgba(255, 255, 255, 0) 182.55%);
+    backdrop-filter: blur(5rem);
+    color: $text-primary;
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    &::placeholder {
+        color: $text-secondary;
+        font-size: 1.6rem;
+        font-weight: 600;
     }
 }
