@@ -29,14 +29,13 @@
 .background-blur {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 14.39%, rgba(255, 255, 255, 0) 182.55%);
     backdrop-filter: blur(5rem);
-    border-radius: 4rem;
+    padding: 5rem;
+    border-radius: 5rem;
 }
 
 .background-blur-bordered {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.8) 14.39%, rgba(255, 255, 255, 0) 182.55%);
+    @extend .background-blur !optional;
     border: 0.1rem solid $white;
-    backdrop-filter: blur(5rem);
-    border-radius: 4rem;
 }
 
 .arrow-link {

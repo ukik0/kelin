@@ -1,0 +1,78 @@
+@import 'vars';
+@import 'mixins';
+
+.privacy {
+    &__content {
+        padding: 5rem;
+        padding-right: 5.2rem;
+    }
+
+    &__title {
+        margin-bottom: 4.4rem;
+    }
+
+    &__info-block {
+        padding: 5rem;
+        margin-bottom: 8rem;
+    }
+
+    &__description {
+        color: $blue;
+        font-size: 2.3rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 2.875rem;
+    }
+
+    &__block {
+        margin-bottom: 8rem;
+
+        &-title {
+            color: $text-primary;
+            font-family: $font-family-URW;
+            font-size: 3.2rem;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.064rem;
+            text-transform: uppercase;
+            margin-bottom: 4.4rem;
+        }
+
+        &-text {
+            color: $text-primary;
+            font-size: 2.3rem;
+            font-weight: 400;
+            line-height: 2.875rem;
+
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+
+            a {
+                text-decoration-line: underline;
+            }
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 1rem;
+            padding-left: 3rem;
+        }
+
+        &-item {
+            list-style: initial;
+            p {
+                color: $text-primary;
+                font-size: 2.3rem;
+                font-weight: 400;
+                line-height: 2.875rem;
+            }
+
+            &::marker {
+                color: $text-primary;
+                font-size: 1.2em;
+            }
+        }
+    }
+}
