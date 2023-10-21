@@ -236,8 +236,7 @@
 
 
         <!-- Main Page -->
-        <main>
-            <section class="breadcrumbs">
+        <main><section class="breadcrumbs">
     <div class="container">
         <div class="breadcrumbs__content">
             <ul class="breadcrumbs__list">
@@ -251,8 +250,7 @@
         </div>
     </div>
 </section>
-
-            <section class="contacts">
+ <section class="contacts">
     <div class="container">
         <div class="contacts__content">
             <div class="contacts__info">
@@ -260,7 +258,7 @@
                     <span>Будем рады встрече,</span> познакомим с командой и угостим кофе
                 </h1>
 
-                <div class="contacts__info-block">
+                <div class="contacts__info-block background-blur">
                     <h2 class="contacts__info-block-title">Ждём вас по адресу:</h2>
 
                     <ul class="contacts__info-block-list">
@@ -288,6 +286,10 @@
                     </ul>
                 </div>
                 <div class="contacts__info-socials">
+                    <div class="background-image">
+                        <img src="../img/insights-form/Subtract.svg" alt="">
+                    </div>
+                    
                     <p class="contacts__info-socials-description">
                         Подпишитесь, чтобы не упустить важные новости в области права:
                     </p>
@@ -345,17 +347,14 @@
                 </div>
             </div>
 
-            <div class="contacts__map">
-                map
-            </div>
+            <div id="contacts-map" class="map contacts__map"></div>
         </div>
     </div>
 </section>
-
-        </main>
+</main>
 
         <!-- Footer -->
-         <footer class="footer">
+        <footer class="footer">
     <div class="container">
         <div class="footer__content">
 
@@ -363,6 +362,27 @@
     </div>
 </footer>
     </body>
+    <script
+        src="https://api-maps.yandex.ru/2.1/?apikey=c9e39c09-0f62-4828-b0ce-7ca99a606b15&lang=ru_RU"
+        type="text/javascript"
+    ></script>
+    <script>
+        ymaps.ready(init);
 
+        function init() {
+            let map = new ymaps.Map('contacts-map', {
+                center: [55.708436655963034, 37.4071362641405],
+                zoom: 12
+            });
+
+            map.controls.remove('geolocationControl'); // удаляем геолокацию
+            map.controls.remove('searchControl'); // удаляем поиск
+            map.controls.remove('trafficControl'); // удаляем контроль трафика
+            map.controls.remove('typeSelector'); // удаляем тип
+            map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+            map.controls.remove('zoomControl'); // удаляем контрол зуммирования
+            map.controls.remove('rulerControl'); // удаляем контрол правил
+        }
+    </script>
     <script src="./js/scripts.min.js"></script>
 </html>

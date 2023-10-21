@@ -75,22 +75,28 @@
         }
 
         &-socials {
-            border-radius: 0rem 0rem 5rem 5rem;
-            height: 17.4rem;
+            height: 16.4rem;
             padding: 0 5rem;
-            margin-top: -3rem;
+            padding-top: 4rem;
+            margin-top: -3.35rem;
             position: relative;
-            z-index: -1;
-            background:
-                linear-gradient(96deg, rgba(237, 95, 92, 0.25) -7.13%, rgba(237, 95, 92, 0) 110.4%),
-                linear-gradient(0deg, #00589b 0%, #00589b 100%),
-                url('../img/contacts/Subtract.svg'),
-                lightgray 50% / cover no-repeat;
-            background-blend-mode: normal, color, normal;
 
             display: flex;
             align-items: center;
             justify-content: space-between;
+
+            .background-image {
+                position: absolute;
+                inset: 0;
+                z-index: -1;
+                border-radius: 0rem 0rem 4rem 4rem;
+                overflow: hidden;
+
+                img {
+                    object-fit: initial;
+                    transform: rotate(-90deg) scaleX(5) scaleY(4.75);
+                }
+            }
 
             &-description {
                 color: $white;

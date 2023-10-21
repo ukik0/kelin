@@ -6,7 +6,7 @@
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_187_562" transform="matrix(0 -0.001 0.00469277 0 -0.821015 1)"/>
 </pattern>
-<linearGradient id="paint0_linear_187_562" x1="779" y1="-21.6125" x2="774.141" y2="202.619" gradientUnits="userSpaceOnUse">
+<linearGradient id="paint0_linear_187_562" x1="779" y1="-21.6126" x2="774.141" y2="202.619" gradientUnits="userSpaceOnUse">
 <stop stop-color="#ED5F5C"/>
 <stop offset="1" stop-color="#ED5F5C" stop-opacity="0"/>
 </linearGradient>

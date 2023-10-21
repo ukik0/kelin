@@ -13,14 +13,32 @@
         @@include('./html/_header.html')
 
         <!-- Main Page -->
-        <main>
-            @@include('./html/_breadcrumbs.html')
-            @@include('./html/_contacts.html')
-        </main>
+        <main>@@include('./html/_breadcrumbs.html') @@include('./html/_contacts.html')</main>
 
         <!-- Footer -->
-         @@include('./html/_footer.html')
+        @@include('./html/_footer.html')
     </body>
+    <script
+        src="https://api-maps.yandex.ru/2.1/?apikey=c9e39c09-0f62-4828-b0ce-7ca99a606b15&lang=ru_RU"
+        type="text/javascript"
+    ></script>
+    <script>
+        ymaps.ready(init);
 
+        function init() {
+            let map = new ymaps.Map('contacts-map', {
+                center: [55.708436655963034, 37.4071362641405],
+                zoom: 12
+            });
+
+            map.controls.remove('geolocationControl'); // удаляем геолокацию
+            map.controls.remove('searchControl'); // удаляем поиск
+            map.controls.remove('trafficControl'); // удаляем контроль трафика
+            map.controls.remove('typeSelector'); // удаляем тип
+            map.controls.remove('fullscreenControl'); // удаляем кнопку перехода в полноэкранный режим
+            map.controls.remove('zoomControl'); // удаляем контрол зуммирования
+            map.controls.remove('rulerControl'); // удаляем контрол правил
+        }
+    </script>
     <script src="./js/scripts.min.js"></script>
 </html>
