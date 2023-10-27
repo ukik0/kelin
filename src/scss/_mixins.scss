@@ -52,3 +52,15 @@
 
     @content;
 }
+@mixin text-overflow-ellipsis($lines: 3) {
+    display: -webkit-box;
+    display: box;
+    -webkit-box-orient: vertical;
+    box-orient: vertical;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    -ms-line-clamp: $lines;
+    -webkit-line-clamp: $lines;
+    line-clamp: $lines;
+}

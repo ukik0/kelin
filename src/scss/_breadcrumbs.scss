@@ -3,6 +3,9 @@
 
 .breadcrumbs {
     margin-bottom: 3.8rem;
+    @include small-tablet {
+        margin-bottom: 3.2rem;
+    }
 
     &__list {
         display: flex;
@@ -26,10 +29,10 @@
                 font-weight: 700;
             }
 
-            &::after{
-                @include pseudo{
+            &::after {
+                @include pseudo {
                     width: 2.4rem;
-                    height: .1rem;
+                    height: 0.1rem;
                     background: $text-secondary;
                     left: -3.4rem;
                     top: 50%;
