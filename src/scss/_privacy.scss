@@ -4,16 +4,25 @@
 .privacy {
     &__content {
         padding: 5rem;
-        padding-right: 5.2rem;
+        // padding-right: 5.2rem; //В макете ровно 50px со всех сторон
+        @include small-tablet {
+            padding: 5.2rem 3.2rem;
+        }
     }
 
     &__title {
         margin-bottom: 4.4rem;
+        @include small-tablet {
+            margin-bottom: 4.8rem;
+        }
     }
 
     &__info-block {
         padding: 5rem;
         margin-bottom: 8rem;
+        @include small-tablet {
+            padding: 3.2rem;
+        }
     }
 
     &__description {
@@ -22,10 +31,17 @@
         font-style: normal;
         font-weight: 700;
         line-height: 2.875rem;
+        @include small-tablet {
+            font-size: 3.6rem;
+            line-height: 4.6rem;
+        }
     }
 
     &__block {
         margin-bottom: 8rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
 
         &-title {
             color: $text-primary;
@@ -36,6 +52,10 @@
             letter-spacing: 0.064rem;
             text-transform: uppercase;
             margin-bottom: 4.4rem;
+            @include small-tablet {
+                font-size: 4rem;
+                margin-bottom: 1.6rem;
+            }
         }
 
         &-text {
@@ -43,31 +63,86 @@
             font-size: 2.3rem;
             font-weight: 400;
             line-height: 2.875rem;
+            margin-bottom: 1rem;
+            overflow-wrap: break-word;
 
-            &:not(:last-child) {
-                margin-bottom: 1rem;
+            @include small-tablet {
+                font-size: 3.6rem;
+                line-height: 4.7rem;
             }
+
+            &-container {
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                @include small-tablet {
+                    overflow: hidden;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 13;
+                    -webkit-box-orient: vertical;
+                    margin-bottom: 1.6rem;
+                }
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+            //Применила ко всем
+            // &:not(:last-child) {
+            //     margin-bottom: 1rem;
+            // }
 
             a {
                 text-decoration-line: underline;
             }
         }
+        &-link {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+            -ms-flex-align: center;
+            align-items: center;
+            span {
+                font-size: 3.2rem;
+                color: #00589b;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.32rem;
+            }
+        }
 
         &-list {
-            display: flex;
-            flex-direction: column;
+            // display: flex;
+            // flex-direction: column;
             margin-bottom: 1rem;
             padding-left: 3rem;
+            @include small-tablet {
+                padding: 0;
+            }
         }
 
         &-item {
             list-style: initial;
-            p {
-                color: $text-primary;
-                font-size: 2.3rem;
-                font-weight: 400;
-                line-height: 2.875rem;
+
+            @include small-tablet {
+                list-style: none;
+                margin-bottom: 1.6rem;
             }
+            p {
+                margin: 0;
+            }
+            // Добавила класс в HTML
+            // p {
+            //     color: $text-primary;
+            //     font-size: 2.3rem;
+            //     font-weight: 400;
+            //     line-height: 2.875rem;
+            //     @include small-tablet {
+            //         font-size: 3.6rem;
+            //         line-height: 4.8rem;
+            //     }
+            // }
 
             &::marker {
                 color: $text-primary;

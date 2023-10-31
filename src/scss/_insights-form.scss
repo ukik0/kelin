@@ -1,9 +1,15 @@
 @import 'vars';
+@import 'mixins';
 
 .insights__form {
     &-content {
         display: flex;
         gap: 1.2rem;
+
+        @include small-tablet {
+            flex-direction: column;
+            gap: 4.8rem;
+        }
     }
 
     &-info {
@@ -11,12 +17,16 @@
         width: 100%;
         overflow: hidden;
 
+        @include small-tablet {
+            flex-direction: column-reverse;
+        }
+
         &-icons {
             border-radius: 5rem 0rem 0rem 5rem;
             background:
                 url('../img/insights-form/Subtract.svg'),
                 linear-gradient(96deg, rgba(237, 95, 92, 0.25) -7.13%, rgba(237, 95, 92, 0) 110.4%),
-                linear-gradient(0deg, #00589b 0%, #00589b 100%),
+                linear-gradient(0deg, $blue 0%, $blue 100%),
                 lightgray 50% / cover no-repeat;
             background-blend-mode: normal, color, normal;
             max-width: 17.1rem;
@@ -25,10 +35,30 @@
             align-items: center;
             padding-left: 2.5rem;
 
+            @include small-tablet {
+                border-radius: 0 0 24px 24px;
+                background: url('../img/insights-form/M-Subtract.svg');
+                background-repeat: no-repeat;
+                background-position: bottom;
+                background-size: cover;
+                max-width: none;
+                padding: 0;
+                padding-bottom: 5.2rem;
+                justify-content: center;
+                align-items: flex-end;
+                min-height: 32.4rem;
+                margin-top: -9rem;
+            }
+
             &-list {
                 display: flex;
                 flex-direction: column;
                 gap: 3.6rem;
+
+                @include small-tablet {
+                    flex-direction: row;
+                    gap: 4.8rem;
+                }
             }
 
             &-item {
@@ -40,6 +70,11 @@
                 justify-content: center;
                 background: $white;
                 transition: 0.3s background ease-out;
+
+                @include small-tablet {
+                    width: 13rem;
+                    height: 13rem;
+                }
 
                 &:hover {
                     background: $blue;
@@ -56,18 +91,30 @@
                 &.--telegramm {
                     a {
                         padding: 2.4rem 2.5rem 2.4rem 1.8rem;
+
+                        @include small-tablet {
+                            padding: 4rem 4.3rem 4rem 3.1rem;
+                        }
                     }
                 }
 
                 &.--whatsapp {
                     a {
                         padding: 2.4rem;
+
+                        @include small-tablet {
+                            padding: 4rem;
+                        }
                     }
                 }
 
                 &.--vk {
                     a {
                         padding: 2.4rem 1.7rem;
+
+                        @include small-tablet {
+                            padding: 4.2rem 2.9rem;
+                        }
                     }
                 }
 
@@ -93,6 +140,12 @@
             max-width: 90.4rem;
             width: 100%;
             margin-left: -4.5rem;
+
+            @include small-tablet {
+                padding: 3.2rem;
+                padding-top: 5.2rem;
+                margin: 0;
+            }
         }
 
         &-title {
@@ -106,6 +159,11 @@
             line-height: normal;
             text-transform: uppercase;
 
+            @include small-tablet {
+                font-size: 4rem;
+                margin-bottom: 1.6rem;
+            }
+
             span {
                 color: $blue;
             }
@@ -118,6 +176,12 @@
             line-height: 2.875rem;
             display: block;
             margin-bottom: 6.1rem;
+
+            @include small-tablet {
+                font-size: 3.6rem;
+                line-height: 4.5rem;
+                margin-bottom: 4.8rem;
+            }
         }
 
         &-clarification {
@@ -126,16 +190,32 @@
             gap: 11rem;
             margin-bottom: 6.1rem;
 
+            @include small-tablet {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 2.4rem;
+                margin-bottom: 4.8rem;
+            }
+
             &-item {
                 display: flex;
                 flex-direction: column;
                 gap: 0.2rem;
+
+                @include small-tablet {
+                    gap: 1.6rem;
+                }
 
                 &-name {
                     color: $text-secondary;
                     font-size: 1.6rem;
                     font-weight: 600;
                     line-height: normal;
+
+                    @include small-tablet {
+                        font-size: 2.8rem;
+                        line-height: 1.8rem;
+                    }
                 }
 
                 &-link {
@@ -146,6 +226,12 @@
                     letter-spacing: 0.08rem;
                     text-transform: uppercase;
                     line-height: normal;
+
+                    @include small-tablet {
+                        font-size: 3.6rem;
+                        line-height: 2.6rem;
+                        letter-spacing: 0.12rem;
+                    }
                 }
             }
         }
@@ -155,15 +241,28 @@
             flex-direction: column;
             gap: 2.4rem;
 
+            @include small-tablet {
+                gap: 2.4rem;
+            }
+
             &-item {
                 display: flex;
                 flex-direction: column;
                 gap: 1.2rem;
 
+                @include small-tablet {
+                    gap: 1.6rem;
+                }
+
                 &-name {
                     color: $text-secondary;
                     font-size: 1.6rem;
                     font-weight: 600;
+
+                    @include small-tablet {
+                        font-size: 2.8rem;
+                        line-height: 1.8rem;
+                    }
                 }
 
                 &-text {
@@ -171,6 +270,11 @@
                     font-size: 2.3rem;
                     font-weight: 400;
                     line-height: 2.875rem;
+
+                    @include small-tablet {
+                        font-size: 3.6rem;
+                        line-height: 4.5rem;
+                    }
                 }
             }
         }
@@ -181,6 +285,12 @@
         max-width: 64.1rem;
         width: 100%;
 
+        @include small-tablet {
+            padding: 3.2rem;
+            padding-top: 5.2rem;
+            max-width: none;
+        }
+
         &-title {
             color: $text-primary;
             font-size: 2.3rem;
@@ -189,6 +299,12 @@
             margin-bottom: 3.4rem;
             max-width: 44rem;
 
+            @include small-tablet {
+                font-size: 3.6rem;
+                line-height: 4.5rem;
+                margin-bottom: 4.8rem;
+                max-width: none;
+            }
             span {
                 font-weight: 700;
             }
@@ -201,6 +317,10 @@
             width: 100%;
             margin-bottom: 3.4rem;
 
+            @include small-tablet {
+                gap: 1.6rem;
+                margin-bottom: 2.4rem;
+            }
             label {
                 width: 100%;
             }
@@ -210,6 +330,16 @@
             width: 100%;
             padding: 3.5rem 3.2rem;
             max-height: 8.5rem;
+
+            @include small-tablet {
+                padding: 4.6rem 6.4rem;
+                font-size: 3.2rem;
+                max-height: none;
+
+                &::placeholder {
+                    font-size: 3.2rem;
+                }
+            }
         }
 
         &-button {
@@ -224,6 +354,12 @@
             font-weight: 400;
             max-width: 30.4rem;
             margin-left: 3rem;
+
+            @include small-tablet {
+                font-size: 2.4rem;
+                max-width: none;
+                margin: 0;
+            }
 
             a {
                 text-decoration-line: underline;
