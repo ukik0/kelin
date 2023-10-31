@@ -25,7 +25,4 @@ body {
 
 section {
     margin-bottom: 16rem;
-    @include small-tablet {
-        margin-bottom: 8rem;
-    }
 }

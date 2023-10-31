@@ -28,4 +28,11 @@
     height: 75.5rem;
     border-radius: 5rem;
     margin-top: 1rem;
+    align-self: flex-end;
+
+    @include small-tablet {
+        order: 1;
+        height: 68.8rem;
+        border-radius: 4rem;
+    }
 }

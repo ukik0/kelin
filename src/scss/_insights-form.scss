@@ -26,7 +26,7 @@
             background:
                 url('../img/insights-form/Subtract.svg'),
                 linear-gradient(96deg, rgba(237, 95, 92, 0.25) -7.13%, rgba(237, 95, 92, 0) 110.4%),
-                linear-gradient(0deg, #00589b 0%, #00589b 100%),
+                linear-gradient(0deg, $blue 0%, $blue 100%),
                 lightgray 50% / cover no-repeat;
             background-blend-mode: normal, color, normal;
             max-width: 17.1rem;
@@ -37,6 +37,10 @@
 
             @include small-tablet {
                 border-radius: 0 0 24px 24px;
+                background: url('../img/insights-form/M-Subtract.svg');
+                background-repeat: no-repeat;
+                background-position: bottom;
+                background-size: cover;
                 max-width: none;
                 padding: 0;
                 padding-bottom: 5.2rem;
