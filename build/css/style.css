@@ -2883,11 +2883,15 @@ section {
 
   .home__hero-content-text {
     max-width: unset;
+<<<<<<< HEAD
     gap: 1.6rem;
+=======
+>>>>>>> a47ac0e (feat: read more js privacy)
   }
 
   .home__hero-content-text-description {
     font-size: 3.6rem;
+<<<<<<< HEAD
     line-height: 4.5rem;
   }
 
@@ -3046,5 +3050,13 @@ section {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
+=======
+  }
+
+  .home__hero-content-image {
+    height: 94.3rem;
+    top: 40rem;
+    left: -20rem;
+>>>>>>> a47ac0e (feat: read more js privacy)
   }
 }
