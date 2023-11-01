@@ -1,0 +1,134 @@
+@import 'vars';
+@import 'mixins';
+
+.home {
+    &__hero {
+        &-content {
+            display: flex;
+            flex-direction: column;
+            gap: 8.3rem;
+
+            &-text {
+                display: flex;
+                flex-direction: column;
+                gap: 3.8rem;
+                max-width: 60rem;
+
+                &-description {
+                    color: rgba(67, 78, 88, 0.75);
+                    font-size: 2.3rem;
+                    font-weight: 700;
+                    line-height: 2.875rem;
+                }
+            }
+
+            &-image {
+                position: absolute;
+
+                z-index: -10;
+
+                height: 119.3rem;
+                right: 8.8rem;
+                top: 0;
+            }
+
+            &-blocks {
+                display: flex;
+                flex-direction: column;
+                max-width: 93.7rem;
+                gap: 1.2rem;
+                &-benefits {
+                    padding: 4.2rem;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    &-title {
+                        max-width: 49.5rem;
+                        font-family: $font-family-URW;
+                        font-size: 3.2rem;
+                        font-weight: 400;
+                        letter-spacing: 0.064rem;
+                        text-transform: uppercase;
+                    }
+                    &-description {
+                        display: flex;
+                        align-items: baseline;
+                        gap: 0.8rem;
+                        font-size: 2.3rem;
+                        font-weight: 700;
+                        span {
+                            display: flex;
+                            color: $blue;
+                            font-size: 6rem;
+                            letter-spacing: 0.12rem;
+                            text-transform: uppercase;
+                            img {
+                                max-width: 1.2rem;
+                                width: 100%;
+                                height: 1.8rem;
+                            }
+                        }
+                    }
+                }
+                &-question {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 1rem;
+                    border-radius: 50rem;
+
+                    &-form {
+                        padding: 0.8rem;
+                        display: flex;
+                        align-items: center;
+                        label {
+                            margin-left: 8rem;
+                            margin-right: 16.6rem;
+                        }
+                        button {
+                            display: inline-flex;
+                            flex-shrink: 0;
+                        }
+                    }
+
+                    &-icons {
+                        display: flex;
+                        gap: 1rem;
+
+                        &-item {
+                            width: 10.1rem;
+                            height: 10.1rem;
+
+                            a {
+                                svg {
+                                    path {
+                                        fill: $icons;
+                                    }
+                                }
+                            }
+                            &.--telegramm {
+                                a {
+                                    padding: 3.1rem 3.3rem 3.1rem 2.4rem;
+                                }
+                            }
+                            &.--whatsapp {
+                                a {
+                                    padding: 3.1rem;
+                                }
+                            }
+                        }
+                    }
+                }
+                &-copyright {
+                    color: $text-secondary;
+                    font-size: 1.4rem;
+                    font-weight: 400;
+                    margin-left: 4.1rem;
+                    a {
+                        text-decoration-line: underline;
+                    }
+                }
+            }
+        }
+    }
+}
