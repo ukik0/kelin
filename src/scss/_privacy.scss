@@ -52,6 +52,7 @@
             letter-spacing: 0.064rem;
             text-transform: uppercase;
             margin-bottom: 4.4rem;
+
             @include small-tablet {
                 font-size: 4rem;
                 margin-bottom: 1.6rem;
@@ -79,9 +80,16 @@
                 @include small-tablet {
                     overflow: hidden;
                     display: -webkit-box;
-                    -webkit-line-clamp: 13;
                     -webkit-box-orient: vertical;
                     margin-bottom: 1.6rem;
+                    -webkit-line-clamp: 13;
+                    max-height: 63.6rem;
+                    transition: max-height 0.5s ease-in-out;
+
+                    &.show-text {
+                        -webkit-line-clamp: inherit;
+                        max-height: 400rem;
+                    }
                 }
             }
             &:last-child {
@@ -103,20 +111,17 @@
             -webkit-box-align: center;
             -ms-flex-align: center;
             align-items: center;
-            span {
-                font-size: 3.2rem;
-                color: #00589b;
-                font-weight: 600;
-                text-transform: uppercase;
-                letter-spacing: 0.32rem;
-            }
+            font-size: 3.2rem;
+            color: #00589b;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.32rem;
         }
 
         &-list {
-            // display: flex;
-            // flex-direction: column;
             margin-bottom: 1rem;
             padding-left: 3rem;
+
             @include small-tablet {
                 padding: 0;
             }

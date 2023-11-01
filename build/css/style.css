@@ -1679,9 +1679,6 @@ section {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-}
-
-.privacy__block-link span {
   font-size: 3.2rem;
   color: #00589b;
   font-weight: 600;
@@ -2682,9 +2679,18 @@ section {
   .privacy__block-text-container {
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 13;
     -webkit-box-orient: vertical;
     margin-bottom: 1.6rem;
+    -webkit-line-clamp: 13;
+    max-height: 63.6rem;
+    -webkit-transition: max-height 0.5s ease-in-out;
+    -o-transition: max-height 0.5s ease-in-out;
+    transition: max-height 0.5s ease-in-out;
+  }
+
+  .privacy__block-text-container.show-text {
+    -webkit-line-clamp: inherit;
+    max-height: 400rem;
   }
 
   .privacy__block-list {
@@ -2768,5 +2774,23 @@ section {
 
   .contacts__info-socials-list {
     gap: 4.8rem;
+  }
+
+  .home__hero-content {
+    gap: 57.6rem;
+  }
+
+  .home__hero-content-text {
+    max-width: unset;
+  }
+
+  .home__hero-content-text-description {
+    font-size: 3.6rem;
+  }
+
+  .home__hero-content-image {
+    height: 94.3rem;
+    top: 40rem;
+    left: -20rem;
   }
 }

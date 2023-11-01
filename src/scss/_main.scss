@@ -8,17 +8,29 @@
             flex-direction: column;
             gap: 8.3rem;
 
+            @include small-tablet {
+                gap: 57.6rem;
+            }
+
             &-text {
                 display: flex;
                 flex-direction: column;
                 gap: 3.8rem;
                 max-width: 60rem;
 
+                @include small-tablet {
+                    max-width: unset;
+                }
+
                 &-description {
                     color: rgba(67, 78, 88, 0.75);
                     font-size: 2.3rem;
                     font-weight: 700;
                     line-height: 2.875rem;
+
+                    @include small-tablet {
+                        font-size: 3.6rem;
+                    }
                 }
             }
 
@@ -30,6 +42,12 @@
                 height: 119.3rem;
                 right: 8.8rem;
                 top: 0;
+
+                @include small-tablet {
+                    height: 94.3rem;
+                    top: 40rem;
+                    left: -20rem;
+                }
             }
 
             &-blocks {
