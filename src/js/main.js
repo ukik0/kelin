@@ -1,6 +1,5 @@
 // Custom scripts
 document.addEventListener('DOMContentLoaded', function () {
-
     //read more
     if (document.querySelector('.privacy__block-link')) {
         const buttons = document.querySelectorAll('.privacy__block-link');
@@ -12,10 +11,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (text.classList.contains('show-text')) {
                     text.classList.remove('show-text');
                     button.textContent = 'читать далее';
-                    
-                    text.scrollIntoView({behavior: "smooth"});
+
+                    text.scrollIntoView({ behavior: 'smooth' });
+                    setTimeout(() => {
+                        text.classList.add('hide-text');
+                    }, 300);
                 } else {
                     text.classList.add('show-text');
+                    text.classList.remove('hide-text');
                     button.textContent = 'свернуть';
                 }
             });

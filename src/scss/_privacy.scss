@@ -82,10 +82,12 @@
                     display: -webkit-box;
                     -webkit-box-orient: vertical;
                     margin-bottom: 1.6rem;
-                    -webkit-line-clamp: 13;
                     max-height: 63.6rem;
                     transition: max-height 0.5s ease-in-out;
 
+                    &.hide-text{
+                        -webkit-line-clamp: 13;
+                    }
                     &.show-text {
                         -webkit-line-clamp: inherit;
                         max-height: 400rem;
