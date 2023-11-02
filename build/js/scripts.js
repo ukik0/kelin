@@ -18,10 +18,15 @@ document.addEventListener('DOMContentLoaded', function () {
                     text.classList.remove('show-text');
                     button.textContent = 'читать далее';
 <<<<<<< HEAD
+<<<<<<< HEAD
                     
                     text.scrollIntoView({behavior: "smooth"});
 =======
 >>>>>>> a555c4c (feat: added in main page main screen desk+mob)
+=======
+                    
+                    text.scrollIntoView({behavior: "smooth"});
+>>>>>>> 1f5fbbd (feat: main.js)
                 } else {
                     text.classList.add('show-text');
                     button.textContent = 'свернуть';
