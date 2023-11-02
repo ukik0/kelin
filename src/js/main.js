@@ -1,17 +1,22 @@
 // Custom scripts
+document.addEventListener('DOMContentLoaded', function () {
 
-window.onload = function () {
-    let buttons = document.querySelectorAll('.privacy__block-link');
-    buttons.forEach((button) => {
-        button.addEventListener('click', () => {
-            let text = button.previousElementSibling;
-            if (text.classList.contains('show-text')) {
-                text.classList.remove('show-text');
-                button.textContent = 'читать далее';
-            } else {
-                text.classList.add('show-text');
-                button.textContent = 'свернуть';
-            }
+    //read more
+    if (document.querySelector('.privacy__block-link')) {
+        const buttons = document.querySelectorAll('.privacy__block-link');
+
+        buttons.forEach((button) => {
+            button.addEventListener('click', () => {
+                let text = button.previousElementSibling;
+
+                if (text.classList.contains('show-text')) {
+                    text.classList.remove('show-text');
+                    button.textContent = 'читать далее';
+                } else {
+                    text.classList.add('show-text');
+                    button.textContent = 'свернуть';
+                }
+            });
         });
-    });
-};
+    }
+});
