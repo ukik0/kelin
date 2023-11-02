@@ -12,6 +12,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 if (text.classList.contains('show-text')) {
                     text.classList.remove('show-text');
                     button.textContent = 'читать далее';
+                    
+                    text.scrollIntoView({behavior: "smooth"});
                 } else {
                     text.classList.add('show-text');
                     button.textContent = 'свернуть';
