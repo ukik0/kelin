@@ -3,6 +3,8 @@
 
 .article {
     &__container {
+        margin-bottom: 16rem;
+
         padding: 0 34.4rem;
         width: 100%;
         @include small-tablet {
@@ -393,8 +395,6 @@
         }
     }
     &__other-articles {
-        margin-top: 16rem;
-
         @include small-tablet {
             padding: 0;
             background: none;
