@@ -208,52 +208,6 @@
         }
     }
 
-    &__benefits {
-        display: flex;
-        gap: 0.8rem;
-        margin-bottom: 8rem;
-
-        @include small-tablet {
-            flex-direction: column;
-            gap: 1.6rem;
-        }
-
-        &-item {
-            display: flex;
-            flex-direction: column;
-            gap: 2rem;
-
-            @include small-tablet {
-                padding: 3.2rem;
-                gap: 1.6rem;
-            }
-
-            &-top {
-                display: flex;
-                align-items: center;
-                gap: 2rem;
-            }
-            &-icon {
-                height: 8rem;
-
-                @include small-tablet {
-                    height: 10rem;
-                }
-            }
-            &-title {
-                font-family: $font-family-URW;
-                font-size: 2.2rem;
-                font-weight: 400;
-                letter-spacing: 0.044rem;
-                text-transform: uppercase;
-
-                @include small-tablet {
-                    font-size: 3.6rem;
-                }
-            }
-        }
-    }
-
     &__credit-holidays {
         position: relative;
         margin-bottom: 16rem;
@@ -531,146 +485,6 @@
 
             @include small-tablet {
                 text-align: center;
-            }
-        }
-    }
-
-    &__request {
-        display: flex;
-        justify-content: space-between;
-        padding: 5rem;
-
-        @include small-tablet {
-            flex-direction: column;
-            padding: 3.2rem;
-            padding-top: 5.2rem;
-            gap: 4.8rem;
-        }
-        &-text-container {
-            display: flex;
-            flex-direction: column;
-            gap: 3.4rem;
-            max-width: 66.6rem;
-
-            @include small-tablet {
-                gap: 1.6rem;
-            }
-        }
-        &-form {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-            grid-column-gap: 1.2rem;
-            grid-row-gap: 2.6rem;
-            width: 100%;
-            max-width: 81.4rem;
-
-            @include small-tablet {
-                display: flex;
-                flex-direction: column;
-                gap: 1.6rem;
-            }
-            label {
-                width: 100%;
-                input {
-                    @include small-tablet {
-                        padding: 4.6rem 6.4rem;
-                    }
-                }
-                input,
-                input::placeholder {
-                    @include small-tablet {
-                        font-size: 3.2rem;
-                    }
-                }
-            }
-            label[for='tel'] {
-                @include small-tablet {
-                    margin-bottom: 0.8rem;
-                }
-            }
-            &-fields {
-                display: flex;
-                gap: 1.2rem;
-            }
-            &-field {
-                width: 100%;
-                background: rgba(255, 255, 255, 0.8);
-                padding: 3.5rem 4rem 3.1rem 4rem;
-            }
-            &-button {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                color: $blue;
-
-                @include small-tablet {
-                    margin-bottom: 0.8rem;
-                }
-            }
-            &-copyright {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                margin-left: 2.7rem;
-                color: #cde3f5;
-                font-size: 1.4rem;
-                font-weight: 400;
-
-                @include small-tablet {
-                    display: block;
-                    margin: 0;
-                    font-size: 2.4rem;
-                }
-
-                a {
-                    text-decoration: underline;
-                }
-            }
-            &-social {
-                grid-area: 3 / 1 / 4 / 3;
-
-                @include small-tablet {
-                    border: none;
-                    margin-top: 3.2rem;
-                    padding: 0;
-                    padding-left: 3.2rem;
-                    padding-right: 3.2rem;
-                }
-                &-text {
-                    margin-left: 4rem;
-                    color: $white;
-                    font-size: 1.8rem;
-                    font-style: normal;
-                    font-weight: 700;
-                    line-height: normal;
-
-                    @include small-tablet {
-                        margin: 0;
-                        font-size: 3.2rem;
-                    }
-                }
-
-                &-icons {
-                    gap: 0.8rem;
-                    &-item {
-                        @include small-tablet {
-                            width: 13rem;
-                            height: 13rem;
-                        }
-
-                        &.--telegramm a {
-                            @include small-tablet {
-                                padding: 4rem 4.2rem 4rem 3rem;
-                            }
-                        }
-                        &.--whatsapp a {
-                            @include small-tablet {
-                                padding: 4rem;
-                            }
-                        }
-                    }
-                }
             }
         }
     }
@@ -959,88 +773,6 @@
                 max-height: 38rem;
             }
         }
-
-        &-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.3rem;
-
-            &-item {
-                padding: 4.4rem;
-                flex-grow: 1;
-                padding-right: 9.5rem;
-                width: auto;
-                height: auto;
-
-                @include small-tablet {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    gap: 1.6rem;
-                    max-width: 58rem;
-                    padding: 3.2rem;
-                }
-
-                &-row {
-                    display: flex;
-                    align-items: center;
-                    gap: 2.8rem;
-
-                    @include small-tablet {
-                        gap: 3.6rem;
-                    }
-                }
-                &-image {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-
-                    width: 11.8rem;
-                    height: 11.8rem;
-                    border-radius: 50%;
-                    padding: 3.6rem 1.8rem;
-                    background-color: $white;
-
-                    @include small-tablet {
-                        width: 12rem;
-                        height: 12rem;
-                    }
-
-                    &.volkswagen {
-                        padding: 2.8rem;
-
-                        @include small-tablet {
-                            padding: 3rem;
-                        }
-                    }
-                    &.simple {
-                        padding: 4.5rem 2.2rem;
-                    }
-                    &.lamoda {
-                        padding: 4.8rem 1.9rem;
-                    }
-                }
-                &-title {
-                    font-family: $font-family-URW;
-                    font-size: 3.2rem;
-                    font-weight: 400;
-                    letter-spacing: 0.064rem;
-                    text-transform: uppercase;
-                    max-width: 47.6rem;
-
-                    @include small-tablet {
-                        width: min-content;
-                        font-size: 4rem;
-                    }
-                }
-                &-description {
-                    max-width: 58.4rem;
-                    &-simple {
-                        max-width: 69.2rem;
-                    }
-                }
-            }
-        }
     }
 
     &__protection {
@@ -1220,52 +952,6 @@
                         }
                     }
                 }
-            }
-        }
-    }
-
-    &__planets {
-        display: flex;
-        flex-direction: column;
-        position: relative;
-        gap: 4.3rem;
-        overflow: hidden;
-
-        @include small-tablet {
-            gap: 1.6rem;
-            padding: 5.2rem 3.2rem;
-            padding-bottom: 45.4rem;
-        }
-        &::after {
-            @include pseudo {
-                background-image: url('../img/main/planets.webp');
-                background-repeat: no-repeat;
-                background-size: contain;
-                width: 102.1rem;
-                height: 54.9rem;
-                bottom: -8rem;
-                right: 0;
-            }
-            @include small-tablet {
-                width: 100rem;
-                height: 55rem;
-                bottom: -3rem;
-                right: -3rem;
-            }
-        }
-        &-title {
-            max-width: 68rem;
-
-            @include small-tablet {
-                text-align: center;
-            }
-        }
-        &-description {
-            max-width: 53.4rem;
-
-            @include small-tablet {
-                max-width: unset;
-                text-align: center;
             }
         }
     }
@@ -1705,41 +1391,6 @@
         }
     }
 
-    &__talents {
-        @include small-tablet {
-            padding: 3.2rem;
-            padding-top: 5.2rem;
-        }
-
-        &-title {
-            margin-bottom: 4.4rem;
-
-            @include small-tablet {
-                margin-bottom: 4.8rem;
-                color: $blue;
-            }
-        }
-        &-swiper {
-            &-wrapper {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-gap: 1.2rem;
-            }
-
-            &-slide {
-                display: flex;
-                flex-direction: column;
-                gap: 5rem;
-                height: auto;
-
-                @include small-tablet {
-                    gap: 2.4rem;
-                    padding: 3.2rem;
-                }
-            }
-        }
-    }
-
     &__price {
         @include small-tablet {
             padding: 3.2rem;
@@ -1747,96 +1398,6 @@
         }
         &-title {
             margin-bottom: 4.4rem;
-        }
-        &-content {
-            display: flex;
-            gap: 1.2rem;
-
-            @include small-tablet {
-                flex-direction: column;
-                gap: 4.8rem;
-            }
-
-            &-card {
-                position: relative;
-                display: flex;
-                flex-direction: column;
-                overflow: hidden;
-                flex-grow: 1;
-                gap: 4.3rem;
-                padding-right: 28.5rem;
-
-                @include small-tablet {
-                    padding: 3.2rem;
-                    gap: 2.4rem;
-                }
-
-                &-title {
-                }
-                &-list {
-                    display: flex;
-                    flex-direction: column;
-                    gap: 1.6rem;
-
-                    @include small-tablet {
-                        gap: 3.2rem;
-                        margin-left: 4rem;
-                    }
-
-                    &-item {
-                        list-style-type: initial;
-                        &::marker {
-                            color: $blue;
-                        }
-                    }
-                }
-                &-image {
-                    z-index: -1;
-                    position: absolute;
-                    right: 0;
-                    bottom: 0;
-
-                    @include small-tablet {
-                        right: -10rem;
-                    }
-                }
-            }
-            &-list {
-                display: flex;
-                flex-direction: column;
-                flex-grow: 1;
-                gap: 1.2rem;
-
-                &-item {
-                    display: flex;
-                    align-items: center;
-                    gap: 3.2rem;
-                    background-color: $white;
-                    border-radius: 4rem;
-                    padding: 1.25rem 3.2rem 1.25rem 1.3rem;
-
-                    @include small-tablet {
-                        border-radius: 20rem;
-                        padding: 3.2rem;
-                        gap: 3.2rem;
-                    }
-
-                    &-number {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        min-width: 5.5rem;
-                        min-height: 5.5rem;
-                        background-color: $blue;
-                        border-radius: 50%;
-
-                        @include small-tablet {
-                            min-width: 8rem;
-                            min-height: 8rem;
-                        }
-                    }
-                }
-            }
         }
     }
 
@@ -2230,6 +1791,454 @@
 
             @include small-tablet {
                 max-width: unset;
+            }
+        }
+    }
+}
+.benefits {
+    display: flex;
+    gap: 0.8rem;
+    margin-bottom: 8rem;
+
+    @include small-tablet {
+        flex-direction: column;
+        gap: 1.6rem;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        @include small-tablet {
+            padding: 3.2rem;
+            gap: 1.6rem;
+        }
+
+        &-top {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+        &-icon {
+            width: 7.6rem;
+            height: 8rem;
+
+            @include small-tablet {
+                width: 9.5rem;
+                height: 10rem;
+            }
+        }
+        &-title {
+            font-family: $font-family-URW;
+            font-size: 2.2rem;
+            font-weight: 400;
+            letter-spacing: 0.044rem;
+            text-transform: uppercase;
+
+            @include small-tablet {
+                font-size: 3.6rem;
+            }
+        }
+    }
+}
+.planets {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 4.3rem;
+    overflow: hidden;
+
+    @include small-tablet {
+        gap: 1.6rem;
+        padding: 5.2rem 3.2rem;
+        padding-bottom: 45.4rem;
+    }
+    &::after {
+        @include pseudo {
+            background-image: url('../img/main/planets.webp');
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 102.1rem;
+            height: 54.9rem;
+            bottom: -8rem;
+            right: 0;
+        }
+        @include small-tablet {
+            width: 100rem;
+            height: 55rem;
+            bottom: -3rem;
+            right: -3rem;
+        }
+    }
+    &__title {
+        max-width: 68rem;
+
+        @include small-tablet {
+            text-align: center;
+        }
+    }
+    &__description {
+        max-width: 53.4rem;
+
+        @include small-tablet {
+            max-width: unset;
+            text-align: center;
+        }
+    }
+}
+.request {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem;
+
+    @include small-tablet {
+        flex-direction: column;
+        padding: 3.2rem;
+        padding-top: 5.2rem;
+        gap: 4.8rem;
+    }
+    &__text-container {
+        display: flex;
+        flex-direction: column;
+        gap: 3.4rem;
+        max-width: 66.6rem;
+
+        @include small-tablet {
+            gap: 1.6rem;
+        }
+    }
+    &__form {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 1.2rem;
+        grid-row-gap: 2.6rem;
+        width: 100%;
+        max-width: 81.4rem;
+
+        @include small-tablet {
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+        }
+        label {
+            width: 100%;
+            input {
+                @include small-tablet {
+                    padding: 4.6rem 6.4rem;
+                }
+            }
+            input,
+            input::placeholder {
+                @include small-tablet {
+                    font-size: 3.2rem;
+                }
+            }
+        }
+        label[for='tel'] {
+            @include small-tablet {
+                margin-bottom: 0.8rem;
+            }
+        }
+        &-fields {
+            display: flex;
+            gap: 1.2rem;
+        }
+        &-field {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 3.5rem 4rem 3.1rem 4rem;
+        }
+        &-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: $blue;
+
+            @include small-tablet {
+                margin-bottom: 0.8rem;
+            }
+        }
+        &-copyright {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-left: 2.7rem;
+            color: #cde3f5;
+            font-size: 1.4rem;
+            font-weight: 400;
+
+            @include small-tablet {
+                display: block;
+                margin: 0;
+                font-size: 2.4rem;
+            }
+
+            a {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__social {
+        grid-area: 3 / 1 / 4 / 3;
+
+        @include small-tablet {
+            border: none;
+            margin-top: 3.2rem;
+            padding: 0;
+            padding-left: 3.2rem;
+            padding-right: 3.2rem;
+        }
+        &-text {
+            margin-left: 4rem;
+            color: $white;
+            font-size: 1.8rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+
+            @include small-tablet {
+                margin: 0;
+                font-size: 3.2rem;
+            }
+        }
+
+        &-icons {
+            gap: 0.8rem;
+            &-item {
+                @include small-tablet {
+                    width: 13rem;
+                    height: 13rem;
+                }
+
+                &.--telegramm a {
+                    @include small-tablet {
+                        padding: 4rem 4.2rem 4rem 3rem;
+                    }
+                }
+                &.--whatsapp a {
+                    @include small-tablet {
+                        padding: 4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+.talents {
+    @include small-tablet {
+        padding: 3.2rem;
+        padding-top: 5.2rem;
+    }
+
+    &__title {
+        margin-bottom: 4.4rem;
+
+        @include small-tablet {
+            margin-bottom: 4.8rem;
+            color: $blue;
+        }
+    }
+    &__list {
+        &-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 1.2rem;
+
+            @include small-tablet {
+                display: flex;
+                flex-direction: column;
+                gap: 1.6rem;
+            }
+        }
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+            height: auto;
+
+            @include small-tablet {
+                gap: 2.4rem;
+                padding: 3.2rem;
+            }
+        }
+    }
+}
+.numbered-details {
+    display: flex;
+    gap: 1.2rem;
+
+    @include small-tablet {
+        flex-direction: column;
+        gap: 4.8rem;
+    }
+
+    &__card {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        flex-grow: 1;
+        gap: 4.3rem;
+        padding-right: 28.5rem;
+
+        @include small-tablet {
+            padding: 3.2rem;
+            gap: 2.4rem;
+        }
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+
+            @include small-tablet {
+                gap: 3.2rem;
+                margin-left: 4rem;
+            }
+
+            &-item {
+                list-style-type: initial;
+                &::marker {
+                    color: $blue;
+                }
+            }
+        }
+        &-title {
+        }
+        &-description {
+            &-container {
+                display: flex;
+                flex-direction: column;
+                gap: 2.4rem;
+            }
+        }
+        &-image {
+            z-index: -1;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+            @include small-tablet {
+                right: -10rem;
+            }
+        }
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        gap: 1.2rem;
+
+        &-item {
+            display: flex;
+            align-items: center;
+            gap: 3.2rem;
+            background-color: $white;
+            border-radius: 4rem;
+            padding: 1.25rem 3.2rem 1.25rem 1.3rem;
+
+            @include small-tablet {
+                border-radius: 20rem;
+                padding: 3.2rem;
+                gap: 3.2rem;
+            }
+
+            &-number {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-width: 5.5rem;
+                min-height: 5.5rem;
+                background-color: $blue;
+                border-radius: 50%;
+
+                @include small-tablet {
+                    min-width: 8rem;
+                    min-height: 8rem;
+                }
+            }
+        }
+    }
+}
+.clients-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.3rem;
+
+    &__item {
+        padding: 4.4rem;
+        flex-grow: 1;
+        padding-right: 9.5rem;
+        width: auto;
+        height: auto;
+
+        @include small-tablet {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            gap: 1.6rem;
+            max-width: 58rem;
+            padding: 3.2rem;
+        }
+
+        &-row {
+            display: flex;
+            align-items: center;
+            gap: 2.8rem;
+
+            @include small-tablet {
+                gap: 3.6rem;
+            }
+        }
+        &-image {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 11.8rem;
+            height: 11.8rem;
+            border-radius: 50%;
+            padding: 3.6rem 1.8rem;
+            background-color: $white;
+
+            @include small-tablet {
+                width: 12rem;
+                height: 12rem;
+            }
+
+            &.volkswagen {
+                padding: 2.8rem;
+
+                @include small-tablet {
+                    padding: 3rem;
+                }
+            }
+            &.simple {
+                padding: 4.5rem 2.2rem;
+            }
+            &.lamoda {
+                padding: 4.8rem 1.9rem;
+            }
+        }
+        &-title {
+            font-family: $font-family-URW;
+            font-size: 3.2rem;
+            font-weight: 400;
+            letter-spacing: 0.064rem;
+            text-transform: uppercase;
+            max-width: 47.6rem;
+
+            @include small-tablet {
+                width: min-content;
+                font-size: 4rem;
+            }
+        }
+        &-description {
+            max-width: 58.4rem;
+            &-simple {
+                max-width: 69.2rem;
             }
         }
     }
