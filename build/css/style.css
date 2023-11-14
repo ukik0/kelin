@@ -2332,47 +2332,6 @@ section {
           text-decoration-line: underline;
 }
 
-.home__benefits {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 0.8rem;
-  margin-bottom: 8rem;
-}
-
-.home__benefits-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 2rem;
-}
-
-.home__benefits-item-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 2rem;
-}
-
-.home__benefits-item-icon {
-  height: 8rem;
-}
-
-.home__benefits-item-title {
-  font-family: "URW Geometric Extended", sans-serif;
-  font-size: 2.2rem;
-  font-weight: 400;
-  letter-spacing: 0.044rem;
-  text-transform: uppercase;
-}
-
 .home__credit-holidays {
   position: relative;
   margin-bottom: 16rem;
@@ -2615,106 +2574,6 @@ section {
   max-width: 87.7rem;
 }
 
-.home__request {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 5rem;
-}
-
-.home__request-text-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 3.4rem;
-  max-width: 66.6rem;
-}
-
-.home__request-form {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 1.2rem;
-  grid-row-gap: 2.6rem;
-  width: 100%;
-  max-width: 81.4rem;
-}
-
-.home__request-form label {
-  width: 100%;
-}
-
-.home__request-form-fields {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1.2rem;
-}
-
-.home__request-form-field {
-  width: 100%;
-  background: rgba(255, 255, 255, 0.8);
-  padding: 3.5rem 4rem 3.1rem 4rem;
-}
-
-.home__request-form-button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  color: #00589b;
-}
-
-.home__request-form-copyright {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-left: 2.7rem;
-  color: #cde3f5;
-  font-size: 1.4rem;
-  font-weight: 400;
-}
-
-.home__request-form-copyright a {
-  text-decoration: underline;
-}
-
-.home__request-form-social {
-  grid-area: 3/1/4/3;
-}
-
-.home__request-form-social-text {
-  margin-left: 4rem;
-  color: #fff;
-  font-size: 1.8rem;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-}
-
-.home__request-form-social-icons {
-  gap: 0.8rem;
-}
-
 .home__block-skills-industry {
   position: relative;
   display: -webkit-box;
@@ -2915,81 +2774,6 @@ section {
   color: rgba(67, 78, 88, 0.75);
 }
 
-.home__clients-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  gap: 1.3rem;
-}
-
-.home__clients-list-item {
-  padding: 4.4rem;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  padding-right: 9.5rem;
-  width: auto;
-  height: auto;
-}
-
-.home__clients-list-item-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 2.8rem;
-}
-
-.home__clients-list-item-image {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 11.8rem;
-  height: 11.8rem;
-  border-radius: 50%;
-  padding: 3.6rem 1.8rem;
-  background-color: #fff;
-}
-
-.home__clients-list-item-image.volkswagen {
-  padding: 2.8rem;
-}
-
-.home__clients-list-item-image.simple {
-  padding: 4.5rem 2.2rem;
-}
-
-.home__clients-list-item-image.lamoda {
-  padding: 4.8rem 1.9rem;
-}
-
-.home__clients-list-item-title {
-  font-family: "URW Geometric Extended", sans-serif;
-  font-size: 3.2rem;
-  font-weight: 400;
-  letter-spacing: 0.064rem;
-  text-transform: uppercase;
-  max-width: 47.6rem;
-}
-
-.home__clients-list-item-description {
-  max-width: 58.4rem;
-}
-
-.home__clients-list-item-description-simple {
-  max-width: 69.2rem;
-}
-
 .home__protection-text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3157,39 +2941,6 @@ section {
   color: rgba(67, 78, 88, 0.75);
   font-size: 1.8rem;
   font-weight: 700;
-}
-
-.home__planets {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  position: relative;
-  gap: 4.3rem;
-  overflow: hidden;
-}
-
-.home__planets::after {
-  content: "";
-  position: absolute;
-  background-image: url("../img/main/planets.webp");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 102.1rem;
-  height: 54.9rem;
-  bottom: -8rem;
-  right: 0;
-}
-
-.home__planets-title {
-  max-width: 68rem;
-}
-
-.home__planets-description {
-  max-width: 53.4rem;
 }
 
 .home__tu-letters {
@@ -3527,123 +3278,8 @@ section {
   border-radius: 50%;
 }
 
-.home__talents-title {
-  margin-bottom: 4.4rem;
-}
-
-.home__talents-swiper-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 1.2rem;
-}
-
-.home__talents-swiper-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 5rem;
-  height: auto;
-}
-
 .home__price-title {
   margin-bottom: 4.4rem;
-}
-
-.home__price-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 1.2rem;
-}
-
-.home__price-content-card {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  overflow: hidden;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  gap: 4.3rem;
-  padding-right: 28.5rem;
-}
-
-.home__price-content-card-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 1.6rem;
-}
-
-.home__price-content-card-list-item {
-  list-style-type: initial;
-}
-
-.home__price-content-card-list-item::marker {
-  color: #00589b;
-}
-
-.home__price-content-card-image {
-  z-index: -1;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-}
-
-.home__price-content-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  gap: 1.2rem;
-}
-
-.home__price-content-list-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 3.2rem;
-  background-color: #fff;
-  border-radius: 4rem;
-  padding: 1.25rem 3.2rem 1.25rem 1.3rem;
-}
-
-.home__price-content-list-item-number {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-width: 5.5rem;
-  min-height: 5.5rem;
-  background-color: #00589b;
-  border-radius: 50%;
 }
 
 .home__individual-calc-text {
@@ -3964,6 +3600,615 @@ section {
 
 .home__compass-description {
   max-width: 53.4rem;
+}
+
+.benefits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.8rem;
+  margin-bottom: 8rem;
+}
+
+.benefits__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+
+.benefits__item-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2rem;
+}
+
+.benefits__item-icon {
+  width: 7.6rem;
+  height: 8rem;
+}
+
+.benefits__item-title {
+  font-family: "URW Geometric Extended", sans-serif;
+  font-size: 2.2rem;
+  font-weight: 400;
+  letter-spacing: 0.044rem;
+  text-transform: uppercase;
+}
+
+.planets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  gap: 4.3rem;
+  overflow: hidden;
+}
+
+.planets::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/main/planets.webp");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 102.1rem;
+  height: 54.9rem;
+  bottom: -8rem;
+  right: 0;
+}
+
+.planets__title {
+  max-width: 68rem;
+}
+
+.planets__description {
+  max-width: 53.4rem;
+}
+
+.request {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 5rem;
+}
+
+.request__text-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3.4rem;
+  max-width: 66.6rem;
+}
+
+.request__form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 1.2rem;
+  grid-row-gap: 2.6rem;
+  width: 100%;
+  max-width: 81.4rem;
+}
+
+.request__form label {
+  width: 100%;
+}
+
+.request__form-fields {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.request__form-field {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  padding: 3.5rem 4rem 3.1rem 4rem;
+}
+
+.request__form-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #00589b;
+}
+
+.request__form-copyright {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-left: 2.7rem;
+  color: #cde3f5;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.request__form-copyright a {
+  text-decoration: underline;
+}
+
+.request__social {
+  grid-area: 3/1/4/3;
+}
+
+.request__social-text {
+  margin-left: 4rem;
+  color: #fff;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.request__social-icons {
+  gap: 0.8rem;
+}
+
+.talents__title {
+  margin-bottom: 4.4rem;
+}
+
+.talents__list-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1.2rem;
+}
+
+.talents__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 5rem;
+  height: auto;
+}
+
+.numbered-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1.2rem;
+}
+
+.numbered-details__card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow: hidden;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  gap: 4.3rem;
+  padding-right: 28.5rem;
+}
+
+.numbered-details__card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.6rem;
+}
+
+.numbered-details__card-list-item {
+  list-style-type: initial;
+}
+
+.numbered-details__card-list-item::marker {
+  color: #00589b;
+}
+
+.numbered-details__card-description-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2.4rem;
+}
+
+.numbered-details__card-image {
+  z-index: -1;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.numbered-details__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  gap: 1.2rem;
+}
+
+.numbered-details__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 3.2rem;
+  background-color: #fff;
+  border-radius: 4rem;
+  padding: 1.25rem 3.2rem 1.25rem 1.3rem;
+}
+
+.numbered-details__list-item-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 5.5rem;
+  min-height: 5.5rem;
+  background-color: #00589b;
+  border-radius: 50%;
+}
+
+.clients-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.3rem;
+}
+
+.clients-list__item {
+  padding: 4.4rem;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding-right: 9.5rem;
+  width: auto;
+  height: auto;
+}
+
+.clients-list__item-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.8rem;
+}
+
+.clients-list__item-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 11.8rem;
+  height: 11.8rem;
+  border-radius: 50%;
+  padding: 3.6rem 1.8rem;
+  background-color: #fff;
+}
+
+.clients-list__item-image.volkswagen {
+  padding: 2.8rem;
+}
+
+.clients-list__item-image.simple {
+  padding: 4.5rem 2.2rem;
+}
+
+.clients-list__item-image.lamoda {
+  padding: 4.8rem 1.9rem;
+}
+
+.clients-list__item-title {
+  font-family: "URW Geometric Extended", sans-serif;
+  font-size: 3.2rem;
+  font-weight: 400;
+  letter-spacing: 0.064rem;
+  text-transform: uppercase;
+  max-width: 47.6rem;
+}
+
+.clients-list__item-description {
+  max-width: 58.4rem;
+}
+
+.clients-list__item-description-simple {
+  max-width: 69.2rem;
+}
+
+.business-areas__hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3.8rem;
+  margin-bottom: 18rem;
+}
+
+.business-areas__hero-title {
+  max-width: 86rem;
+}
+
+.business-areas__hero-description {
+  color: rgba(67, 78, 88, 0.75);
+  max-width: 53.9rem;
+}
+
+.business-areas__hero-button {
+  max-width: 36.6rem;
+}
+
+.business-areas__hero::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img//business-areas/sphere.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -10;
+  width: 125.8013rem;
+  height: 107rem;
+  top: 0;
+  right: 0;
+}
+
+.business-areas__benefits,
+.business-areas__planets {
+  margin-bottom: 12rem;
+}
+
+.business-areas__spheres {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4.4rem;
+  margin-bottom: 16rem;
+}
+
+.business-areas__spheres-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 1.2rem;
+}
+
+.business-areas__spheres-list-item {
+  background-color: #fff;
+  border-radius: 15rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  white-space: nowrap;
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -o-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.business-areas__spheres-list-item a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 2.8rem 5rem;
+}
+
+.business-areas__spheres-list-item:hover {
+  background-color: #00589b;
+}
+
+.business-areas__spheres-list-item:hover a {
+  color: #fff;
+}
+
+.business-areas__spheres-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.business-areas__spheres-card {
+  position: relative;
+  padding: 5rem;
+  padding-left: 11.3rem;
+}
+
+.business-areas__spheres-card-title {
+  position: absolute;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  top: 5rem;
+  left: 5rem;
+}
+
+.business-areas__spheres-card-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4.8rem;
+}
+
+.business-areas__spheres-card-image {
+  width: 61.2rem;
+  height: 22rem;
+}
+
+.business-areas__spheres-card-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 3.2rem;
+}
+
+.business-areas__spheres-card-text-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 0.1rem solid #fff;
+  border-radius: 5rem;
+  gap: 1.6rem;
+  padding: 3.2rem 7rem 3.2rem 2.859rem;
+}
+
+.business-areas__spheres-card-text-list-item {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.business-areas__spheres-card-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1.8rem;
+}
+
+.business-areas__spheres-card-icon {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 14.4rem;
+  min-height: 9.8rem;
+  border: 0.1rem solid #fff;
+  border-radius: 4rem;
+}
+
+.business-areas__spheres-card-icon img {
+  width: auto;
+  height: auto;
+}
+
+.business-areas__request {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4rem;
+}
+
+.business-areas__request-title {
+  max-width: 102.2rem;
+}
+
+.business-areas__request-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.business-areas__request-social {
+  margin-top: 0;
+}
+
+.business-areas__request-button {
+  padding: 3.3rem 8.9rem;
 }
 
 @media (min-width: 48.01em) {
@@ -4848,27 +5093,6 @@ section {
     font-size: 2.4rem;
   }
 
-  .home__benefits {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 1.6rem;
-  }
-
-  .home__benefits-item {
-    padding: 3.2rem;
-    gap: 1.6rem;
-  }
-
-  .home__benefits-item-icon {
-    height: 10rem;
-  }
-
-  .home__benefits-item-title {
-    font-size: 3.6rem;
-  }
-
   .home__credit-holidays {
     padding-bottom: 35.6rem;
   }
@@ -5001,96 +5225,6 @@ section {
     text-align: center;
   }
 
-  .home__request {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding: 3.2rem;
-    padding-top: 5.2rem;
-    gap: 4.8rem;
-  }
-
-  .home__request-text-container {
-    gap: 1.6rem;
-  }
-
-  .home__request-form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 1.6rem;
-  }
-
-  .home__request-form label input {
-    padding: 4.6rem 6.4rem;
-  }
-
-  .home__request-form label input::-webkit-input-placeholder {
-    font-size: 3.2rem;
-  }
-
-  .home__request-form label input::-moz-placeholder {
-    font-size: 3.2rem;
-  }
-
-  .home__request-form label input:-ms-input-placeholder {
-    font-size: 3.2rem;
-  }
-
-  .home__request-form label input::-ms-input-placeholder {
-    font-size: 3.2rem;
-  }
-
-  .home__request-form label input,
-  .home__request-form label input::placeholder {
-    font-size: 3.2rem;
-  }
-
-  .home__request-form label[for=tel] {
-    margin-bottom: 0.8rem;
-  }
-
-  .home__request-form-button {
-    margin-bottom: 0.8rem;
-  }
-
-  .home__request-form-copyright {
-    display: block;
-    margin: 0;
-    font-size: 2.4rem;
-  }
-
-  .home__request-form-social {
-    border: none;
-    margin-top: 3.2rem;
-    padding: 0;
-    padding-left: 3.2rem;
-    padding-right: 3.2rem;
-  }
-
-  .home__request-form-social-text {
-    margin: 0;
-    font-size: 3.2rem;
-  }
-
-  .home__request-form-social-icons-item {
-    width: 13rem;
-    height: 13rem;
-  }
-
-  .home__request-form-social-icons-item.--telegramm a {
-    padding: 4rem 4.2rem 4rem 3rem;
-  }
-
-  .home__request-form-social-icons-item.--whatsapp a {
-    padding: 4rem;
-  }
-
   .home__block-skills-industry {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -5219,42 +5353,6 @@ section {
     max-height: 38rem;
   }
 
-  .home__clients-list-item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    gap: 1.6rem;
-    max-width: 58rem;
-    padding: 3.2rem;
-  }
-
-  .home__clients-list-item-row {
-    gap: 3.6rem;
-  }
-
-  .home__clients-list-item-image {
-    width: 12rem;
-    height: 12rem;
-  }
-
-  .home__clients-list-item-image.volkswagen {
-    padding: 3rem;
-  }
-
-  .home__clients-list-item-title {
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
-    font-size: 4rem;
-  }
-
   .home__protection {
     padding: 3.2rem;
     padding-top: 5.2rem;
@@ -5332,28 +5430,6 @@ section {
 
   .home__protection-swiper-slide-cards-item-description {
     font-size: 3.2rem;
-  }
-
-  .home__planets {
-    gap: 1.6rem;
-    padding: 5.2rem 3.2rem;
-    padding-bottom: 45.4rem;
-  }
-
-  .home__planets::after {
-    width: 100rem;
-    height: 55rem;
-    bottom: -3rem;
-    right: -3rem;
-  }
-
-  .home__planets-title {
-    text-align: center;
-  }
-
-  .home__planets-description {
-    max-width: unset;
-    text-align: center;
   }
 
   .home__tu-letters-swiper {
@@ -5534,57 +5610,9 @@ section {
     font-size: 2.4rem;
   }
 
-  .home__talents {
-    padding: 3.2rem;
-    padding-top: 5.2rem;
-  }
-
-  .home__talents-title {
-    margin-bottom: 4.8rem;
-    color: #00589b;
-  }
-
-  .home__talents-swiper-slide {
-    gap: 2.4rem;
-    padding: 3.2rem;
-  }
-
   .home__price {
     padding: 3.2rem;
     padding-top: 5.2rem;
-  }
-
-  .home__price-content {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 4.8rem;
-  }
-
-  .home__price-content-card {
-    padding: 3.2rem;
-    gap: 2.4rem;
-  }
-
-  .home__price-content-card-list {
-    gap: 3.2rem;
-    margin-left: 4rem;
-  }
-
-  .home__price-content-card-image {
-    right: -10rem;
-  }
-
-  .home__price-content-list-item {
-    border-radius: 20rem;
-    padding: 3.2rem;
-    gap: 3.2rem;
-  }
-
-  .home__price-content-list-item-number {
-    min-width: 8rem;
-    min-height: 8rem;
   }
 
   .home__individual-calc {
@@ -5759,5 +5787,274 @@ section {
 
   .home__compass-description {
     max-width: unset;
+  }
+
+  .benefits {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  .benefits__item {
+    padding: 3.2rem;
+    gap: 1.6rem;
+  }
+
+  .benefits__item-icon {
+    width: 9.5rem;
+    height: 10rem;
+  }
+
+  .benefits__item-title {
+    font-size: 3.6rem;
+  }
+
+  .planets {
+    gap: 1.6rem;
+    padding: 5.2rem 3.2rem;
+    padding-bottom: 45.4rem;
+  }
+
+  .planets::after {
+    width: 100rem;
+    height: 55rem;
+    bottom: -3rem;
+    right: -3rem;
+  }
+
+  .planets__title {
+    text-align: center;
+  }
+
+  .planets__description {
+    max-width: unset;
+    text-align: center;
+  }
+
+  .request {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 3.2rem;
+    padding-top: 5.2rem;
+    gap: 4.8rem;
+  }
+
+  .request__text-container {
+    gap: 1.6rem;
+  }
+
+  .request__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  .request__form label input {
+    padding: 4.6rem 6.4rem;
+  }
+
+  .request__form label input::-webkit-input-placeholder {
+    font-size: 3.2rem;
+  }
+
+  .request__form label input::-moz-placeholder {
+    font-size: 3.2rem;
+  }
+
+  .request__form label input:-ms-input-placeholder {
+    font-size: 3.2rem;
+  }
+
+  .request__form label input::-ms-input-placeholder {
+    font-size: 3.2rem;
+  }
+
+  .request__form label input,
+  .request__form label input::placeholder {
+    font-size: 3.2rem;
+  }
+
+  .request__form label[for=tel] {
+    margin-bottom: 0.8rem;
+  }
+
+  .request__form-button {
+    margin-bottom: 0.8rem;
+  }
+
+  .request__form-copyright {
+    display: block;
+    margin: 0;
+    font-size: 2.4rem;
+  }
+
+  .request__social {
+    border: none;
+    margin-top: 3.2rem;
+    padding: 0;
+    padding-left: 3.2rem;
+    padding-right: 3.2rem;
+  }
+
+  .request__social-text {
+    margin: 0;
+    font-size: 3.2rem;
+  }
+
+  .request__social-icons-item {
+    width: 13rem;
+    height: 13rem;
+  }
+
+  .request__social-icons-item.--telegramm a {
+    padding: 4rem 4.2rem 4rem 3rem;
+  }
+
+  .request__social-icons-item.--whatsapp a {
+    padding: 4rem;
+  }
+
+  .talents {
+    padding: 3.2rem;
+    padding-top: 5.2rem;
+  }
+
+  .talents__title {
+    margin-bottom: 4.8rem;
+    color: #00589b;
+  }
+
+  .talents__list-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1.6rem;
+  }
+
+  .talents__list-item {
+    gap: 2.4rem;
+    padding: 3.2rem;
+  }
+
+  .numbered-details {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 4.8rem;
+  }
+
+  .numbered-details__card {
+    padding: 3.2rem;
+    gap: 2.4rem;
+  }
+
+  .numbered-details__card-list {
+    gap: 3.2rem;
+    margin-left: 4rem;
+  }
+
+  .numbered-details__card-image {
+    right: -10rem;
+  }
+
+  .numbered-details__list-item {
+    border-radius: 20rem;
+    padding: 3.2rem;
+    gap: 3.2rem;
+  }
+
+  .numbered-details__list-item-number {
+    min-width: 8rem;
+    min-height: 8rem;
+  }
+
+  .clients-list__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 1.6rem;
+    max-width: 58rem;
+    padding: 3.2rem;
+  }
+
+  .clients-list__item-row {
+    gap: 3.6rem;
+  }
+
+  .clients-list__item-image {
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .clients-list__item-image.volkswagen {
+    padding: 3rem;
+  }
+
+  .clients-list__item-title {
+    width: -webkit-min-content;
+    width: -moz-min-content;
+    width: min-content;
+    font-size: 4rem;
+  }
+
+  .business-areas__hero {
+    gap: 1.6rem;
+  }
+
+  .business-areas__hero-title {
+    max-width: unset;
+  }
+
+  .business-areas__hero-description {
+    margin-bottom: 65.8rem;
+    max-width: unset;
+  }
+
+  .business-areas__hero-button {
+    max-width: unset;
+  }
+
+  .business-areas__hero::after {
+    width: 444.865px;
+    height: 378.379px;
+    top: 55rem;
+  }
+
+  .business-areas__spheres-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .business-areas__request-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }

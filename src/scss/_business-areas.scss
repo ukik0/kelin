@@ -1,0 +1,186 @@
+.business-areas {
+    &__hero {
+        display: flex;
+        flex-direction: column;
+        gap: 3.8rem;
+        margin-bottom: 18rem;
+
+        @include small-tablet {
+            gap: 1.6rem;
+        }
+        &-title {
+            max-width: 86rem;
+
+            @include small-tablet {
+                max-width: unset;
+            }
+        }
+        &-description {
+            color: $text-secondary;
+            max-width: 53.9rem;
+
+            @include small-tablet {
+                margin-bottom: 65.8rem;
+                max-width: unset;
+            }
+        }
+        &-button {
+            max-width: 36.6rem;
+
+            @include small-tablet {
+                max-width: unset;
+            }
+        }
+        &::after {
+            @include pseudo {
+                background-image: url('../img//business-areas/sphere.webp');
+                background-repeat: no-repeat;
+                background-size: cover;
+                z-index: -10;
+                width: 125.8013rem;
+                height: 107rem;
+                top: 0;
+                right: 0;
+            }
+            @include small-tablet {
+                width: 444.865px;
+                height: 378.379px;
+                top: 55rem;
+            }
+        }
+    }
+    &__benefits,
+    &__planets {
+        margin-bottom: 12rem;
+    }
+    &__spheres {
+        display: flex;
+        flex-direction: column;
+        gap: 4.4rem;
+        margin-bottom: 16rem;
+
+        &-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.2rem;
+
+            &-item {
+                background-color: $white;
+                border-radius: 15rem;
+                flex: 1;
+                white-space: nowrap;
+                transition: background-color 0.3s ease-in-out;
+
+                a {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                    padding: 2.8rem 5rem;
+                }
+            }
+            &-item:hover {
+                background-color: $blue;
+                a {
+                    color: $white;
+                }
+            }
+        }
+        &-cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            gap: 1.2rem;
+
+            @include small-tablet{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+        &-card {
+            position: relative;
+            padding: 5rem;
+            padding-left: 11.3rem;
+
+            &-title {
+                position: absolute;
+                transform: rotate(180deg);
+                writing-mode: vertical-lr;
+                top: 5rem;
+                left: 5rem;
+            }
+            &-content {
+                display: flex;
+                flex-direction: column;
+                gap: 4.8rem;
+            }
+            &-image {
+                width: 61.2rem;
+                height: 22rem;
+            }
+            &-text {
+                display: flex;
+                flex-direction: column;
+                gap: 3.2rem;
+
+                &-list {
+                    display: flex;
+                    flex-direction: column;
+                    border: 0.1rem solid $white;
+                    border-radius: 5rem;
+                    gap: 1.6rem;
+                    padding: 3.2rem 7rem 3.2rem 2.859rem;
+
+                    &-item {
+                        font-size: 1.8rem;
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            &-icons {
+                display: flex;
+                justify-content: space-between;
+                gap: 1.8rem;
+            }
+            &-icon {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                min-width: 14.4rem;
+                min-height: 9.8rem;
+                border: 0.1rem solid $white;
+                border-radius: 4rem;
+
+                img {
+                    width: auto;
+                    height: auto;
+                }
+            }
+        }
+    }
+    &__request {
+        flex-direction: column;
+        gap: 4rem;
+
+        &-title {
+            max-width: 102.2rem;
+        }
+        &-container {
+            display: flex;
+            justify-content: space-between;
+
+            @include small-tablet {
+                flex-direction: column;
+            }
+        }
+        &-social {
+            margin-top: 0;
+        }
+        &-button {
+            padding: 3.3rem 8.9rem;
+        }
+    }
+}

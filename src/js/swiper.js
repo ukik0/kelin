@@ -70,7 +70,7 @@ let clientsSwiper = null,
 
 function resizeClientsSwiper() {
     if (window.innerWidth <= 768) {
-        clientsSwiperWrapper.classList.remove('home__clients-list');
+        clientsSwiperWrapper.classList.remove('clients-list');
         if (!clientsSwiper) {
             clientsSwiper = new Swiper('.clients-swiper', {
                 loop: true,
@@ -83,7 +83,7 @@ function resizeClientsSwiper() {
     }
     if (window.innerWidth > 768) {
         if (clientsSwiper) {
-            clientsSwiperWrapper.classList.add('home__clients-list');
+            clientsSwiperWrapper.classList.add('clients-list');
             clientsSwiper.destroy();
             clientsSwiper = null;
         }
@@ -128,7 +128,7 @@ let talentsSwiper = null,
 
 function resizeTalentsSwiper() {
     if (window.innerWidth <= 768) {
-        talentsSwiperWrapper.classList.remove('home__talents-swiper-wrapper');
+        talentsSwiperWrapper.classList.remove('talents__list-wrapper');
         if (!talentsSwiper) {
             talentsSwiper = new Swiper('.talents-swiper', {
                 loop: true,
@@ -141,7 +141,7 @@ function resizeTalentsSwiper() {
     }
     if (window.innerWidth > 768) {
         if (talentsSwiper) {
-            talentsSwiperWrapper.classList.add('home__talents-swiper-wrapper');
+            talentsSwiperWrapper.classList.add('talents__list-wrapper');
             talentsSwiper.destroy();
             talentsSwiper = null;
         }
